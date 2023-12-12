@@ -1,3 +1,1 @@
-# spotify-app
-# This is a music application where you get to hear all the album covers from around the world along.
-# The best part of the app is you can upload the songs you've sang as well!
+#this code base is an attempt to build a spotify music app front end 
