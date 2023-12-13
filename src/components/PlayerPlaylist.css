@@ -1,0 +1,47 @@
+.playlist-container{
+    overflow: scroll;
+    padding: 20px;
+    height: 100%;
+}
+.player-playlist-header{
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.playlist-image-card{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px;
+    background-image: url('https://img.freepik.com/premium-photo/music-colorful-music-note-theme-creative-digital-illustration-music-sound_743855-7635.jpg');
+    color: black;
+    background-size: cover;
+}
+.playlist-body h1{
+    color: #ededed;
+    font-size: 2.5rem;
+}
+
+.playlist-list{
+    color: #dcdcdc;
+    margin-top: 30px;
+    display: flex;
+}
+
+.playlist-list .playlist-list-id{
+    width: 10%;
+}
+.playlist-list .playlist-list-artist{
+    width: 40%;
+}
+.playlist-list .playlist-list-title{
+    width: 40%;
+}
+.playlist-list .playlist-list-duration{
+    width: 10%;
+}
+.playlist-container{
+    height: 79vh;
+    overflow-y: scroll;
+    padding: 20px;
+}

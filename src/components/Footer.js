@@ -1,8 +1,27 @@
-import React from 'react'
+import React, { useState } from 'react'
+import './Footer.css'
+import {ReactComponent as PlayIcon} from '../assets/PlayIcon.svg';
+import {ReactComponent as NextIcon} from '../assets/NextIcon.svg';
+import {ReactComponent as PauseIcon} from '../assets/PauseIcon.svg';
+import {ReactComponent as PreviousIcon} from '../assets/PreviousIcon.svg';
 
 export default function Footer() {
+  const [isPlaying, setIsPlaying] =useState(false)
   return (
-    <div>footer</div>
+    <div className='footer-container'>
+      <div className='player-control'>
+        <PreviousIcon width={'32px'} />
+          {/* for play icon */}
+        {
+          isPlaying
+          ?
+          <PauseIcon width={'32px'} onClick={()=>setIsPlaying(false)} />
+          :
+          <PlayIcon width={'32px'}  onClick={()=>setIsPlaying(true)} />
+        }
+        <NextIcon width={'32px'} />
+      </div>
+    </div>
   )
 }
 
